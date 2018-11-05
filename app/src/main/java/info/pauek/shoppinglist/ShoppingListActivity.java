@@ -99,10 +99,14 @@ public class ShoppingListActivity extends AppCompatActivity {
             case R.id.borrars:
 
                 for(int i=0; i< items.size(); i++){
-                    
+                    if(items.get(i).isChecked()){
+                        items.remove(i);
+                    }else{
+                        i++;
+                    }
 
                 }
-
+                adapter.notifyDataSetChanged();
         }
 
 
