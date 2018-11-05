@@ -11,15 +11,33 @@
 
     <TextView
         android:id="@+id/name_view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="242dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:gravity="center_vertical"
-        android:paddingLeft="24dp"
+        android:paddingLeft="0dp"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="Potatoes" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:scaleX="1.70"
+        android:scaleY="1.70"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/name_view"
+        app:layout_constraintTop_toTopOf="@+id/name_view" />
 
 </android.support.constraint.ConstraintLayout>
