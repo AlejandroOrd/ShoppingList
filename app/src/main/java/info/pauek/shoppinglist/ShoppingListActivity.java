@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -80,4 +83,30 @@ public class ShoppingListActivity extends AppCompatActivity {
     public void delete(View view) {
         adapter.notifyDataSetChanged();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return  true;
+    }
+
+    @Override
+    public  boolean onOptionsItemSelected (MenuItem item){
+
+        switch (item.getItemId()){
+
+            case R.id.borrars:
+
+                for(int i=0; i< items.size(); i++){
+                    
+
+                }
+
+        }
+
+
+        return  super.onOptionsItemSelected(item);
+    }
 }
+
