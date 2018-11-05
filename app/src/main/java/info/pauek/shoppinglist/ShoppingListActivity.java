@@ -62,9 +62,18 @@ public class ShoppingListActivity extends AppCompatActivity {
                 adapter.notifyItemChanged(position);
             }
         });
+        items_view.setAdapter(adapter);
+        items_view.setOnLongClickListener(new View.OnLongClickListener() {
+
+            @Override
+            public boolean onLongClick(View v) {
+                String msg = "Has clicaLonmgt: ";
+                Toast.makeText(ShoppingListActivity.this, msg, Toast.LENGTH_SHORT).show();
+                return false;
+
+            }
+        });
     }
-
-
     public void addfuction(View view) {
 
 
